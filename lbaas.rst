@@ -113,7 +113,7 @@ As shown below. ::
   | +--------------------------+  |  | +-------------------+ |
   |       network1(subnet1)       |  |   network1(subnet1)   |
   +-------------------------------+  +-----------------------+
-              Region One                     Region Two
+             Region One                     Region Two
   Fig. 1. The scenario of balancing load across instances of one subnet which
   reside in different regions.
 
@@ -139,14 +139,14 @@ As shown below. ::
   |                                       |  |                       |
   | +----------------------------------+  |  | +-------------------+ |
   | |                                  |  |  | |                   | |
-  | |   +---------+        +---------+ |  |  | | +---------+       | |
-  | |   | member1 |        | member2 | |  |  | | | member3 |       | |
-  | |   +---------+        +---------+ |  |  | | +---------+       | |
+  | |   +---------+      +---------+   |  |  | |    +---------+    | |
+  | |   | member1 |      | member2 |   |  |  | |    | member3 |    | |
+  | |   +---------+      +---------+   |  |  | |    +---------+    | |
   | |                                  |  |  | |                   | |
   | +----------------------------------+  |  | +-------------------+ |
-  |                    network1(subnet1)  |  |     network2(subnet2) |
+  |           network1(subnet1)           |  |    network2(subnet2)  |
   +---------------------------------------+  +-----------------------+
-                            Region One                  Region Two
+                 Region One                         Region Two
   Fig. 2. The scenario of balancing load across instances of different subnets
   which reside in different regions as well.
 
