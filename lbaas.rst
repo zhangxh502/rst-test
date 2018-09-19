@@ -94,8 +94,8 @@ in the same subnet or not.
 LBaaS members in multiple regions
 =================================
 
-1. members in the same subnet yet locating in different regions
---------------------------------------------------------------- ::
+1. members in the same subnet yet locating in different regions ::
+--------------------------------------------------------------- 
 
       +-------------------------------+  +-----------------------+
       | +---------------------------+ |  |                       |
