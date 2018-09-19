@@ -26,7 +26,7 @@ Overall Implementation
 The Tricircle is designed in a central-local fashion, where all the local
 neutrons are managed by the central neutron. As a result, in order to adapt
 the central-local design and the amphorae mechanism of
-Octavia, we plan to deploy LBaaS as follows.
+Octavia, we plan to deploy LBaaS as follows. ::
 
                     +---------------------------+
                     |                           |
@@ -34,7 +34,7 @@ Octavia, we plan to deploy LBaaS as follows.
                     |                           |
                     +---------------------------+
                                 Central Region
-
+::
 +----------------------------+    +-----------------------------+
 |     +----------------+     |    |     +----------------+      |
 |     |  LBaaS Octavia |     |    |     |  LBaaS Octavia |      |
@@ -96,7 +96,7 @@ LBaaS members in multiple regions
 
 1. members in the same subnet yet locating in different regions
 ---------------------------------------------------------------
-
+::
 +-------------------------------+  +-----------------------+
 | +---------------------------+ |  |                       |
 | |    Amphora                | |  |                       |
@@ -126,7 +126,7 @@ a pool.
 
 2. members residing in different subnets and regions
 ----------------------------------------------------
-
+::
 +---------------------------------------+  +-----------------------+
 | +-----------------------------------+ |  |                       |
 | |            Amphora                | |  |                       |
