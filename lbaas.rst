@@ -96,7 +96,7 @@ LBaaS members in multiple regions
 
 1. members in the same subnet yet locating in different regions
 --------------------------------------------------------------- 
-::
+      ::
       +-------------------------------+  +-----------------------+
       | +---------------------------+ |  |                       |
       | |    Amphora                | |  |                       |
@@ -113,8 +113,8 @@ LBaaS members in multiple regions
       |       network1(subnet1)       |  |   network1(subnet1)   |
       +-------------------------------+  +-----------------------+
                   Region One                     Region Two
-Fig. 1. The scenario of balancing load across instances of one subnet which
-reside in different regions.
+  Fig. 1. The scenario of balancing load across instances of one subnet which
+  reside in different regions.
 
 As shown in Fig. 1, suppose that a load balancer is created in Region one,
 and hence a listener, a pool, and two members in subnet1. When adding an
