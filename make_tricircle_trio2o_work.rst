@@ -65,21 +65,21 @@ zone.
 
 After Tricircle and Trio2o work together, the region is divided into: ::
 
-                    +---------------------+
-             neutron|                     |
-            --------|-->  CentralRegion   |
-                    |        |  |         |
-                    +---------------------+
-                             |  |
-    +---------------------+  |  |   +---------------------+
-nova|                     |  |  |   |                     |
-----|-----> RegionOne     |<--  |   |                     |
-    |+--------+  |  |     |     --->|      RegionTwo      |
-    ||  Pod1  |<--  ----- |-------> |                     |
-    |+--------+           |         |                     |
-    +---------------------+         +---------------------+
+                      +---------------------+
+               neutron|                     |
+              --------|-->  CentralRegion   |
+                      |        |  |         |
+                      +---------------------+
+                               |  |
+      +---------------------+  |  |   +---------------------+
+  nova|                     |  |  |   |                     |
+  ----|-----> RegionOne     |<--  |   |                     |
+      |+--------+  |  |     |     --->|      RegionTwo      |
+      ||  Pod1  |<--  ----- |-------> |                     |
+      |+--------+           |         |                     |
+      +---------------------+         +---------------------+
 
-          Fig. 3. Tricircle with Trio2o Region manage
+            Fig. 3. Tricircle with Trio2o Region manage
 
 As shown in Fig. 3. When tricircle and trio2o work together, tricircle is
 divided into three regions: CentralRegion, RegionOne, and RegionTwo,
@@ -117,12 +117,14 @@ so Pod1 is used instead of RegionOne to query the virtual machine.
 If tricircle is used with trio2o, you need to manually set the TRIO2O_ENABLE
 variable in ::
     tricircle/tempestplugin/smoke_test.sh
-to true before the smoke test, which is false by default.
+to true before the smoke test, which is false by default. ::
+    TRIO2O_ENABLE=true
 
 Installation with DevStack
 ==========================
 
 To add the installation of trio2o refer to the following documentation: ::
+
     https://github.com/openstack/trio2o/blob/master/doc/source/installation.rst
 
 Data Model Impact
