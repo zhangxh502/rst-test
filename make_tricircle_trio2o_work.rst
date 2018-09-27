@@ -118,6 +118,7 @@ If tricircle is used with trio2o, you need to manually set the TRIO2O_ENABLE
 variable in ::
     tricircle/tempestplugin/smoke_test.sh
 to true before the smoke test, which is false by default. ::
+
     TRIO2O_ENABLE=true
 
 Installation with DevStack
