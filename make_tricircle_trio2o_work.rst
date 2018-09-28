@@ -7,7 +7,7 @@ Background
 
 Since the tricircle was separated from trio2o, the division of labor between
 the management of network resources and computing resources in the data center
-cascade, Tricircle specifically cascades network resources, while trio2o only
+cascade, tricircle specifically cascades network resources, while trio2o only
 keeps resources associated with computing resources for cascading.
 After separation, the two components have difference between the architecture
 and the management of the region. In order for the two components to work
@@ -31,7 +31,7 @@ Tricircle region is divided as follows: ::
     |                     |         |                     |
     +---------------------+         +---------------------+
 
-                  Fig. 1. Tricircle Region manage
+                  Fig. 1. Tricircle region manage
 
 As shown in Fig. 1. Tricircle is responsible for the cascading management of
 network resources, and divides CentralRegion, RegionOne, RegionTwo into three
@@ -54,7 +54,7 @@ Trio2o region is divided as follows: ::
     |                     |         |                     |
     +---------------------+         +---------------------+
 
-                   Fig. 2. Trio2o Region manage
+                   Fig. 2. Trio2o region manage
 
 As shown in Fig. 2. Trio2o is responsible for the cascade management of
 computing resources, and divides RegionOne, Pod1, and Pod2 into three regions.
@@ -63,7 +63,7 @@ The computing resources related to nova will be operated through RegionOne.
 As for which cascaded region to operate, it is specified by the availability
 zone.
 
-After Tricircle and Trio2o work together, the region is divided into: ::
+After tricircle and trio2o work together, the region is divided into: ::
 
                       +---------------------+
                neutron|                     |
@@ -79,7 +79,7 @@ After Tricircle and Trio2o work together, the region is divided into: ::
       |+--------+           |         |                     |
       +---------------------+         +---------------------+
 
-            Fig. 3. Tricircle with Trio2o Region manage
+            Fig. 3. Tricircle with trio2o region manage
 
 As shown in Fig. 3. When tricircle and trio2o work together, tricircle is
 divided into three regions: CentralRegion, RegionOne, and RegionTwo,
@@ -87,7 +87,7 @@ while trio2o is divided into RegionOne, Pod1, and RegionTwo, that is,
 tricircle and trio2o share a RegionTwo. That is, the separation of computing
 resources and network resources in RegionOne, Pod1 bears the calculation part.
 
-Tricircle Pods: ::
+Tricircle pods: ::
 
     +----------------------------------------+
     |  CentralRegion     |                   |
@@ -97,7 +97,7 @@ Tricircle Pods: ::
     |     RegionTwo      |        az2        |
     +----------------------------------------+
 
-Trio2o Pods: ::
+Trio2o pods: ::
 
     +----------------------------------------+
     |        Pod1        |        az1        |
