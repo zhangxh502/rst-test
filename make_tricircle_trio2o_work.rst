@@ -127,6 +127,8 @@ Installation with DevStack
 To add the installation of trio2o refer to the following documentation: ::
 
     https://github.com/openstack/trio2o/blob/master/doc/source/installation.rst
+    
+Note that when creating az2, replace Pod2 with RegionTwo.
 
 Data Model Impact
 =================
